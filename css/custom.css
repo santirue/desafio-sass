@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  box-shadow: -1px 3px 3px black;
+  z-index: 1;
+  position: relative;
+  background: linear-gradient(106.9deg, rgb(148, 14, 60) 60.9%, rgb(3, 22, 27) 122.3%);
+}
+
+.nav__main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.8125rem;
+}
+.nav__main .nav__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3.125rem;
+}
+.nav__main .nav__menu li {
+  padding: 0 1.25rem;
+  font-size: 1.125rem;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 900;
+}
+.nav__main .nav__menu li a:hover {
+  border-bottom: solid 2px #ffffff;
+}
+
+.nav__brand i {
+  font-size: 1.5625rem;
+  margin-left: 3.125rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+.hero {
+  background-image: url(../../assets/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0.2;
+  position: relative;
+}
+.hero__tittle {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  background-color: rgba(0, 0, 0, 0.626);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+.hero__text {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Orbitron", sans-serif;
+  background-color: rgba(0, 0, 0, 0.626);
+  margin: 1rem;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.hero__btn {
+  width: 70px;
+  height: 30px;
+  background: linear-gradient(106.9deg, rgb(148, 14, 60) 60.9%, rgb(3, 22, 27) 122.3%);
+  color: rgb(255, 249, 249);
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 2.5px 2.5px black;
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    height: 80vh;
+  }
+}
+.cards__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.cards__grid .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20px;
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
+}
+.cards__grid .card h3 {
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.388);
+  width: 100%;
+  text-align: center;
+  line-height: 3;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: relative;
+  top: -1rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.79);
+}
+.cards__grid .card span {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  top: -1rem;
+  background-color: rgba(0, 0, 0, 0.388);
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.79);
+}
+.cards__grid .card-1 {
+  background: url(../../assets/card-1.jpg) center center/cover no-repeat;
+}
+.cards__grid .card-2 {
+  background: url(../../assets/card-2.jpg) center center/cover no-repeat;
+}
+.cards__grid .card-3 {
+  background: url(../../assets/card-3.jpg) center center/cover no-repeat;
+}
+.cards__grid .card-4 {
+  background: url(../../assets/card-4.jpg) center center/cover no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+  .cards__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(180.2deg, rgb(24, 24, 24) 1.2%, rgb(58, 58, 58) 89.8%);
+}
+
+.main__grid {
+  display: grid;
+  width: 85%;
+  background: linear-gradient(180.2deg, rgb(24, 24, 24) 1.2%, rgb(58, 58, 58) 89.8%);
+  margin: auto;
+}
+
+.conocenos__grid {
+  display: flex;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.conocenos__grid h2 {
+  text-shadow: 2px 2px 2px black;
+}
+.conocenos__grid span {
+  text-shadow: 2px 2px 2px black;
+}
+
+/*# sourceMappingURL=custom.css.map */

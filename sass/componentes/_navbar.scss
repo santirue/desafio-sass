@@ -1,0 +1,41 @@
+@use '../utilidades/mixinsfunc';
+@use '../utilidades/variables.scss';
+
+header{
+    box-shadow: -1px 3px 3px black;
+    z-index: 1;
+    position: relative;
+    background:variables.$cGradient;
+}
+
+.nav__main{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height:mixinsfunc.pixeles-rem(45);
+    .nav__menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: mixinsfunc.pixeles-rem(50);
+        li{
+            padding:0 mixinsfunc.pixeles-rem(20);
+            font-size: mixinsfunc.pixeles-rem(18);
+            text-shadow: 2px 2px 2px black;
+            font-weight: 900;
+            a:hover{
+                border-bottom:solid 2px #ffffff;
+                
+            }
+        }
+    }
+}
+
+.nav__brand i {
+    font-size: mixinsfunc.pixeles-rem(25);
+    margin-left: mixinsfunc.pixeles-rem(50);
+    text-shadow: 2px 2px 2px black;
+}

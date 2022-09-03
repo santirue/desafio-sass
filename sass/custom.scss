@@ -1,0 +1,36 @@
+@use 'utilidades/reset.scss';
+@use 'componentes/navbar';
+@use 'componentes/hero';
+@use 'utilidades/variables.scss';
+@use 'componentes/cards';
+
+body{ 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:variables.$cGradient-dark;
+}
+
+.main__grid {
+    display: grid;
+    width: 85%;
+    background:variables.$cGradient-dark;
+    margin: auto;
+
+}
+
+.conocenos__grid{
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    h2{
+        text-shadow: 2px 2px 2px black;
+    }
+    span{
+        text-shadow: 2px 2px 2px black;
+    }
+}
+
+
